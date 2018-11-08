@@ -11,10 +11,10 @@
     <!-- Google Analytics -->
     <script>
         (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-XXXXX-Y', 'auto');
@@ -56,9 +56,15 @@
                         <div class="row">
                             <div class="col-5 mx-auto text-center">
                                 <b class="promo-title">Искусственный интеллект для решения<br>ваших бизнес-задач</b>
-                                <p class="promo-description mt-5">Мы разработали мощнейшую систему для поиска
-                                    информации о
-                                    компаниях на базе искусственного интеллекта</p>
+                                <p class="promo-description mt-5">Подпишись на новости</p>
+                                <form id="subscription-form" class="form-inline" method="POST">
+                                    <div class="input-group mb-3 mx-auto">
+                                        <input id="subscription-email" name="subscription-email" type="text" class="form-control" placeholder="Email">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit">Подписаться</button>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
