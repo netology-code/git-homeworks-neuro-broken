@@ -13,8 +13,7 @@
             return;
         }
 
-        const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-        if (re.matches(email)) {
+        if (!email.includes('@')) {
             subpscriptionHelp.classList.remove('text-hide');
             return;
         }
